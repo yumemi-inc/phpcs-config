@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="yumemi-inc/phpcs-config">
+    <description>Customised configuration for PHPCodeSniffer.</description>
+
+    <!-- Uses colors on output -->
+    <arg name="colors" />
+
+    <!-- Options (p: Shows progress, s: Shows rule name on errors) -->
+    <arg value="ps" />
+
+    <!-- Excludes files in vendor directory -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <!-- Uses PSR-12 preset -->
+    <rule ref="PSR12" />
+
+    <!-- Requires "declare(strict_types=1);" statement -->
+    <rule ref="Generic.PHP.RequireStrictTypes" />
+
+    <!-- Allows method names in other languages in tests directory -->>
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
+</ruleset>

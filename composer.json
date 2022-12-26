@@ -1,0 +1,28 @@
+{
+    "name": "yumemi-inc/phpcs-config",
+    "description": "Customised configuration for PHPCodeSniffer.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naoki Ikeguchi",
+            "email": "n_ikeguchi@yumemi.co.jp"
+        },
+        {
+            "name": "Hirosugu Takeshita",
+            "email": "h_takeshita@yumemi.co.jp"
+        },
+        {
+            "name": "mpyw",
+            "email": "mpyw628@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.1",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
